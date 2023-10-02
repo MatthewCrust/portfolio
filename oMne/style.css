@@ -1,0 +1,147 @@
+@font-face {
+    font-family: myFont1;
+    src: url(font/Kanit-ExtraBold.ttf);
+  }
+
+  @font-face {
+    font-family: myFont2;
+    src: url(font/Kanit-Medium.ttf);
+  }
+
+  @font-face {
+    font-family: myFont3;
+    src: url(font/Kanit-Light.ttf);
+  }
+
+.container-fluid{
+    display: flex !important; 
+    flex-direction : column !important;
+    justify-content: center !important;
+}
+.nav-link{
+    color: white !important;
+    font-size: x-large !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-family: myFont2;
+}
+.masthead{
+    background-color: #1ABC9C !important;
+}
+.navbar{
+    background-color: #2C3E50!important;
+    height: 80px!important;
+    transition: height 0.3s ease!important;
+}
+.navbar-smaller {
+    height: 60px!important;
+}
+.webContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.basicText{
+    font-family: myFont3;
+    font-size: 22px;
+    color: #2C3E50;
+}
+.masthead-heading{
+    font-family: myFont1 !important;
+    font-size: 100px !important;
+}
+.masthead-subheading{
+    font-family: myFont2 !important;
+    font-size: 30px !important;
+}
+
+.portfolioContainer{
+    background-color: #1ABC9C;
+}
+.porTitle{
+    color: white;
+    font-family: myFont2;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.porItemsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.porItem {
+    position: relative;
+    height: 270px;
+    width: 450px;
+    margin: 20px;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.porItem:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icon:hover{
+    opacity: 60%;
+}
+.icon{
+    padding: 10px;
+}
+.iconsContainer{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.formContainer{
+    width: 670px;
+    margin-right: 50px;
+}
+.zpravaTitle{
+    font-family: myFont2;
+    color: #2C3E50;
+}
+.form-control{
+    font-family: myFont3 !important;
+    color: #2C3E50 !important;
+}
+.sendBtn{
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    background-color: #1ABC9C;
+    color: white;
+    font-size: x-large;
+    border: #1ABC9C;
+    font-family: myFont2;
+}
+.sendBtn:hover{
+    background-color: white;
+    color: #1ABC9C;
+    border: solid 3px #1ABC9C;
+}
